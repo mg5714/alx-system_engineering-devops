@@ -1,2 +1,1 @@
-#!/bin/bash
 ln -s $(which ls) ./ls
