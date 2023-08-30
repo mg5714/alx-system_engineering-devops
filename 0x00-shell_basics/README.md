@@ -25,3 +25,6 @@ this script was Delete the file betty is in /tmp/my_first_directory
 
 9. rm -r /tmp/my_first_directory
 this script delete the directory my_first_directory that is in the /tmp directory.
+
+10. cd ..
+this script that changes the working directory to the previous one.
