@@ -38,4 +38,8 @@ script that lists all files (even ones with names beginning with a period charac
 script that prints the type of the file named iamafile.
 
 13.ln -s /bin/ls __ls__
-Create a symbolic link to /bin/ls, named __ls__. The symbolic link should be created in the current working directory. 
+Create a symbolic link to /bin/ls, named __ls__. The symbolic link should be created in the current working directory.
+
+14.#!/bin/bash
+cp -u *.html ..
+this script copies all html files
