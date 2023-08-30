@@ -26,5 +26,14 @@ this script was Delete the file betty is in /tmp/my_first_directory
 9. rm -r /tmp/my_first_directory
 this script delete the directory my_first_directory that is in the /tmp directory.
 
-10. cd ..
+10. cd -
 this script that changes the working directory to the previous one.
+
+
+11. #!/bin/bash
+ls -la
+cd ..
+ls -la
+cd /boot
+ls -la
+script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
