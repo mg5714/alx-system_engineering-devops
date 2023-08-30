@@ -51,3 +51,7 @@ move all files biginning with upper leter
 16. #!/bin/bash
 rm *~
 remove all files end with ~
+
+17. #!/bin/bash
+mkdir -p welcome/to/school
+to create more than one dir once
