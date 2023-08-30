@@ -55,3 +55,7 @@ remove all files end with ~
 17. #!/bin/bash
 mkdir -p welcome/to/school
 to create more than one dir once
+
+
+18. #!/bin/bash
+ls -xamp
