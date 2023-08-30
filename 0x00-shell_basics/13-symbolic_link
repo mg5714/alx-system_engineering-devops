@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -s $(which ls) ./ls echo "Symbolic link to /bin/ls created in $(pwd)/ls"
+ln -s /bin/ls ls
