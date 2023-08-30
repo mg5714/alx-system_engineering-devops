@@ -22,3 +22,6 @@ this is a script to Move the file betty from /tmp/ to /tmp/my_first_directory
 8.
 rm /tmp/my_first_directory/betty
 this script was Delete the file betty is in /tmp/my_first_directory
+
+9. rm -r /tmp/my_first_directory
+this script delete the directory my_first_directory that is in the /tmp directory.
