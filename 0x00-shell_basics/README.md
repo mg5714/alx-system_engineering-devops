@@ -43,3 +43,11 @@ Create a symbolic link to /bin/ls, named __ls__. The symbolic link should be cre
 14.#!/bin/bash
 cp -u *.html ..
 this script copies all html files
+
+15.  #!/bin/bash 
+mv [[:upper:]] * /tmp/u
+move all files biginning with upper leter
+
+16. #!/bin/bash
+rm *~
+remove all files end with ~
