@@ -1,2 +1,2 @@
 #!/bin/bash
-comod u700,g700,o+rwx hello
+chmod 0077 hello
