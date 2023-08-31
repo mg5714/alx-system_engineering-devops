@@ -59,3 +59,9 @@ to create more than one dir once
 
 18. #!/bin/bash
 ls -xamp
+
+
+
+19. magic file
+0 string SCHOOL School data
+!:mime School
