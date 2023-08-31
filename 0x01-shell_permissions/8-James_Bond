@@ -1,2 +1,2 @@
 #!/bin/bash
-comod u-rwx,g-rwx,o+rwx hello
+comod u700,g700,o+rwx hello
