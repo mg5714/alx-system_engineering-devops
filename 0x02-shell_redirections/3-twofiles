@@ -1,2 +1,2 @@
 #!/bin/bash
-emacs -nw passwd hosts
+pr -m -t passwd hosts
