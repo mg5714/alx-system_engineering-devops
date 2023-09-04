@@ -1,2 +1,2 @@
 #!/bin/bash
-diff -nw  /etc/passwd   /etc/hosts
+emacs -nw passwd hosts
