@@ -7,5 +7,4 @@ do
     echo "Username: $username"
     echo "User ID: $uid"
     echo "Home Directory: $home"
-    echo "--------------------"
 done < "/etc/passwd"
