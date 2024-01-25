@@ -3,13 +3,13 @@
 
 hour=0
 
-while [ $hour -le 12 ]
+while [ $hour -lt 13 ]
 do
 minute=1
-while [ $minute -le 59 ]
+while [ $minute -lt 60 ]
 do
 printf "%02d:%02d\n" $hour $minute
 ((minute++))
 done
 ((hour++))
-done
+done | head -n 70
