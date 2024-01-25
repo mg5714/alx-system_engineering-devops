@@ -8,13 +8,15 @@ then
   if [ -s "$file" ]
   then
     echo "$file file is not empty"
+
+    if [ -f "$file" ]
+    then
+      echo "$file file is a regular file"
+    else
+	    :
+    fi
   else
     echo "$file file is empty"
-  fi
-
-  if [ -f "$file" ]
-  then
-    echo "$file file is a regular file"
   fi
 else
   echo "$file file does not exist"
