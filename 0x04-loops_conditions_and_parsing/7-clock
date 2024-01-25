@@ -10,4 +10,5 @@ while [ $hour -lt 13 ]; do
         ((minute++))
     done
     ((hour++))
+    minute=0
 done | head -n 70
