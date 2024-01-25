@@ -3,7 +3,8 @@
 #script should only display:
 #username, user id, Home directory path for the user
 
-while read -r username password uid gid gecos home shell; do
+while read -r username password uid gid gecos home shell;
+do
     echo "Username: $username"
     echo "User ID: $uid"
     echo "Home Directory: $home"
