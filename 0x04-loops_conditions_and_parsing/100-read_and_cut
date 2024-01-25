@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#a Bash script that displays the content of the file /etc/passwd.
+
+while read -r username password uid gid gecos home shell; do
+    echo "Username: $username"
+    echo "User ID: $uid"
+    echo "Home Directory: $home"
+    echo "--------------------"
+done < /etc/passwd
