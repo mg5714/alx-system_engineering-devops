@@ -5,10 +5,10 @@ hour=0
 minute=1
 
 while [ $hour -lt 13 ]; do
+	echo "Hour: $hour"
     while [ $minute -lt 60 ]; do
-        printf "%Hour: 02d:%02d\n" $hour $minute
+        echo "$minute"
         minute=$((minute + 1))
     done
     hour=$((hour + 1))
-    minute=0
-done | head -n 70
+done
