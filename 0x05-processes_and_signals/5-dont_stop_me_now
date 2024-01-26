@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Bash script that stops 4-to_infinity_and_beyond process.
+
+pid=""
+
+if [ -z "$pid" ]; then
+    echo "Error: PID is not specified."
+    exit 1
+fi
+
+kill "$pid"
