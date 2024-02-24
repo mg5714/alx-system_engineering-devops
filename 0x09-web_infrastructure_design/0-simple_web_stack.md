@@ -1,5 +1,6 @@
 Simple web stack:
 
+![0-simple_web_stack](https://github.com/mg5714/alx-system_engineering-devops/assets/121095012/2f4012bc-e4f6-4f23-8756-b04b3c505811)
 
 
  this is one server web infrastructure that hosts the website that is reachable via www.foobar.com. Start your explanation by having a user wanting to access your website.
