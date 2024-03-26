@@ -1,17 +1,20 @@
 #!/usr/bin/env bash
 # Install nginx
+
 sudo apt-get update
 sudo apt-get -y install nginx
 
-sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default_backup
+# Define the redirection configuration
+REDIRECTION_CONFIG="\
+    location /redirect_me { \\
+        return 301 https://www.example.com/new_page; \\
+    }"
 
-sudo sed -i '/server_name _;/a \
-\
-    location /redirect_me { \
-        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4; \
-    } \
-' /etc/nginx/sites-available/default
+# Use sed to replace the default configuration with the redirection configuration
+sudo sed -i "/listen \[::\]:80 default_server;/a ${REDIRECTION_CONFIG}" /etc/nginx/sites-available/default
 
+# Test Nginx configuration
 sudo nginx -t
 
-sudo service nginx restart
+# Restart Nginx to apply changes
+sudo systemctl restart nginx
