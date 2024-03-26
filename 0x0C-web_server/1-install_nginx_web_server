@@ -3,5 +3,7 @@
 
 sudo apt-get -y update
 sudo apt-get install -y nginx
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
-sudo service nginx restart
+sudo sed -i 's/^\(listen\s*80\)/# \1/' /etc/nginx/sites-available/default
+sudo sed -i 's/# \(listen\s*\[::\]:80\)/\1/' /etc/nginx/sites-available/default
+sudo service nginx reload
+echo "Hello World!" | sudo tee /var/www/html/index.html
