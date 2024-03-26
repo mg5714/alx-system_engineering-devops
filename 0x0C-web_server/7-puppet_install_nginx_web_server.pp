@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 # Install nginx package
 package { 'nginx':
   ensure => installed,
